@@ -50,7 +50,7 @@
   <div x-data="{ open: false }" class="flex flex-col lg:flex-r max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row lg:px-6 lg:px-8">
     <div class="py-4 flex flex-row items-center justify-between">
       
-        <a href="#about"> <img class="h-16 w-auto relative" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/2HJ4WHZOTYRL5UVNNRNHL6QLPHXT218HZT3L403Y.png" alt="Watson Exterior Cleaning logo"> </a>
+        <a href= " #about ""> <img class="h-16 w-auto relative" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/2HJ4WHZOTYRL5UVNNRNHL6QLPHXT218HZT3L403Y.png" alt="Watson Exterior Cleaning logo"> </a>
       
       <button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
         <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -59,7 +59,8 @@
         </svg>
       </button>
     </div>
-    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:justify-end lg:flex-row">
+    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex  lg:flex-row  lg:justify-end ">
+    
       
 <a 
     class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
@@ -97,16 +98,15 @@
     class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
     href="#find-us">Service Areas
 </a>
-     
+   
+    
+  
 
+    
+        <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"x-data="{open: false}">
       
-         <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"x-data="{open: false}">
-        
-            <a target = "_blank"  x-on:click.prevent="open = true" class="" href="">Send us a Text</a>
-      
-
-              
-        <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
+          <a target = "_blank"  x-on:click.prevent="open = true" class="" href="">Send us a Text</a>
+          <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
     <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
             <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
         <div class="block mb-4 border border-gray-200 rounded-lg">
@@ -130,6 +130,9 @@
 
     </form>
 </div>
+      
+          
+        
     </nav>
   </div>
 </div>
@@ -239,7 +242,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
         <div class="relative lg:w-1/2">
         
             
-                <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/WJ0VG87INU2ATSO0TKW0CELIZGXVUK3V9ELP3BRB.png"   alt="About Us Image"  class="object-cover w-full lg:absolute h-80 lg:h-full">
+                <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/I55OE7IIMSR1LGC47IB72EZPSQD8PLPY8H6BR0OS.png"   alt="About Us Image"  class="object-cover w-full lg:absolute h-80 lg:h-full">
             
         
            
@@ -347,8 +350,9 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
     </section>
     
     
+    
     <section   id= "services" class="lg:mt-0 relative w-full px-8 font-sans leading-6  bg-gray-700 border-0 border-gray-200 text-white border-solid ">
-        <div class="flex flex-col items-center max-w-6xl px-8 py-20 mx-auto leading-6 border-solid md:items-stretch md:justify-center md:py-24">
+        <div class="flex flex-col items-center max-w-6xl px-8 py-20 mx-auto leading-6 border-solid md:items-stretch md:justify-center md:py-24 ">
             
             <h2 class="mb-3 lg:pr-9 text-3xl mx-auto font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
                 Our Services
@@ -444,7 +448,9 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
     </section>
     
     
-        <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden  bg-white text-gray-700   md:pt-20 xl:pt-20 xl:pb-20">
+    
+
+        <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden   bg-white text-gray-700   md:pt-20 xl:pt-20 xl:pb-20">
             <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
                 <h2 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h2>
                 <h2 class="my-3 mb-10 text-xl font-medium  text-blue-400  text-center">See why our customers love us</h2>
@@ -589,7 +595,8 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
     
         
     
-    <div  id= "testimonials" class="flex items-center justify-center  bg-gray-700 text-white  py-20 min-w-screen px-4">
+    
+    <div  id= "testimonials" class=" flex items-center justify-center  bg-gray-700 text-white  py-20 min-w-screen px-4">
         <div class="px-16 ">
             <div class="container flex flex-col items-center lg:items-startmx-auto lg:items-center">
                 <div class = "sm:mb-4 md:mb-0">
